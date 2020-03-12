@@ -21,7 +21,7 @@ public class Usermanagementpage extends Testbase {
 	@FindBy(how = How.ID, using = "btnAdd")
 	WebElement addbutton;
 
-	@FindBy(how = How.ID, using = "//*[@id='systemUser-information']/div[1]/h1")
+	@FindBy(how = How.XPATH, using = "//h1[contains(text(),'System Users')]")
 	WebElement searchtitle;
 
 	@FindBy(id = "UserHeading")

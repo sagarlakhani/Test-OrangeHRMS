@@ -20,8 +20,7 @@ public class Testbase {
 	public Testbase() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					("E:\\automation\\Orange\\Orangehrm\\src\\main\\java\\com\\orange\\config\\config.properties"));
+			FileInputStream ip = new FileInputStream(".\\src\\main\\java\\com\\orange\\config\\config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -33,12 +32,10 @@ public class Testbase {
 	public static void initialization() {
 		String browsername = prop.getProperty("browser");
 		if (browsername.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					"E:\\automation\\Orange\\Orangehrm\\browser\\chrome\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "browser\\chrome\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browsername.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					"E:\\automation\\Orange\\Orangehrm\\browser\\firefox\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "browser\\firefox\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
@@ -49,7 +46,5 @@ public class Testbase {
 		driver.get(prop.getProperty("URL"));
 
 	}
-
-	
 
 }

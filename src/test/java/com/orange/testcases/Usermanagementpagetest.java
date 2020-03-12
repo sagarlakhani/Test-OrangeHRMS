@@ -26,14 +26,12 @@ public class Usermanagementpagetest extends Testbase {
 		um = login.loginbutton(prop.getProperty("username"), prop.getProperty("pass"));
 	}
 
-	@Test(priority = 0)
+	@Test(priority = 1)
 	public void validatenavigatetousermanagement() {
-
 		um.Verifyusermanagementpage();
-
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void validateadduserfunctionality() {
 		um.verifyadduser();
 	}

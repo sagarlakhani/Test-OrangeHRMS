@@ -1,5 +1,6 @@
 package com.orange.testcases;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -8,47 +9,42 @@ import com.orange.pages.dashboardpage;
 import com.orange.pages.login;
 
 public class dashboardpagetest extends Testbase {
-	
+
 	login login;
 	dashboardpage dashboardpage = new dashboardpage();
-	
+
 	public dashboardpagetest() {
 		super();
 	}
-	
+
 	@BeforeTest
 	public void setup() {
 		initialization();
 		login = new login();
-	    login.loginbutton(prop.getProperty("username"), prop.getProperty("pass"));
+		login.loginbutton(prop.getProperty("username"), prop.getProperty("pass"));
 	}
-	
-	@Test
+
+	@Test(priority = 2)
 	public void Testpagetitleverification() {
-	 String name=	dashboardpage.pagetitleverification();
-	 System.out.println(name);
+		String name = dashboardpage.pagetitleverification();
+		System.out.println(name);
 	}
-	
-	@Test 
+
+	@Test(priority = 1)
 	public void Testlogoverification() {
 		dashboardpage.titleimagetest();
 	}
-	
-	@Test
+
+	@Test(priority = 3)
 	public void Testmenuverificationtest() {
-		String menu[] = new String[8];
-	    menu =	dashboardpage.menu_windowverification();
-	    for (String menuname : menu)
-	    {
-	    	System.out.println(menuname);
-	    }
-	    	
+
+		dashboardpage.menu_windowverification();
+
 	}
-	
-	/*
-	@BeforeTest
+
+	@AfterTest
 	public void teardown() {
 		driver.quit();
-	}*/
+	}
 
 }
