@@ -1,7 +1,7 @@
 package com.orange.testcases;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.orange.base.Testbase;
@@ -17,7 +17,7 @@ public class dashboardpagetest extends Testbase {
 		super();
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void setup() {
 		initialization();
 		login = new login();
@@ -37,13 +37,13 @@ public class dashboardpagetest extends Testbase {
 
 	@Test(priority = 3)
 	public void Testmenuverificationtest() {
-
 		dashboardpage.menu_windowverification();
-
 	}
 
-	@AfterTest
+	@AfterClass
 	public void teardown() {
+		System.out.println("dashboard after test");
+		driver.close();
 		driver.quit();
 	}
 

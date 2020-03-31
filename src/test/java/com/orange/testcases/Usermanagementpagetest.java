@@ -1,7 +1,7 @@
 package com.orange.testcases;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.orange.base.Testbase;
@@ -19,7 +19,7 @@ public class Usermanagementpagetest extends Testbase {
 		super();
 	}
 
-	@BeforeTest
+	@BeforeClass
 	public void setup() {
 		initialization();
 		login = new login();
@@ -36,8 +36,10 @@ public class Usermanagementpagetest extends Testbase {
 		um.verifyadduser();
 	}
 
-	@AfterTest
+	@AfterClass
 	public void teardown() {
+		System.out.println("usermanagement after test");
+		driver.close();
 		driver.quit();
 	}
 }

@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="username" value="sagar"/>
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="com.orange.testcases.Usermanagementpagetest">
+      <class name="com.orange.testcases.practicetestng">
         <methods>
-          <include name="validatenavigatetousermanagement"/>
-          <include name="setup"/>
-          <include name="teardown"/>
+          <include name="aftermethod"/>
+          <include name="beforesuittest"/>
+          <include name="afterclassmethod"/>
+          <include name="aftertestmethod"/>
+          <include name="aftersuittest"/>
+          <include name="beforemethod"/>
+          <include name="test2method"/>
+          <include name="beforetestmethod"/>
+          <include name="beforeclassmethod"/>
         </methods>
-      </class> <!-- com.orange.testcases.Usermanagementpagetest -->
+      </class> <!-- com.orange.testcases.practicetestng -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

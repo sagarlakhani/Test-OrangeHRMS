@@ -2,7 +2,6 @@ package com.orange.pages;
 
 import static org.testng.Assert.assertTrue;
 
-import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
