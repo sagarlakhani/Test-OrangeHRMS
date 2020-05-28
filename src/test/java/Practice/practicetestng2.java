@@ -1,4 +1,4 @@
-package com.orange.testcases;
+package Practice;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
