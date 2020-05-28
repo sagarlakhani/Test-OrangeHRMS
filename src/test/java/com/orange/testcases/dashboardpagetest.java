@@ -17,30 +17,31 @@ public class dashboardpagetest extends Testbase {
 		super();
 	}
 
-	@BeforeClass
+	@BeforeClass(groups= {"dashboard1"})
 	public void setup() {
 		initialization();
 		login = new login();
 		login.loginbutton(prop.getProperty("username"), prop.getProperty("pass"));
 	}
 
-	@Test(priority = 2)
+	
+	@Test(priority = 2,groups= {"dashboard1"})
 	public void Testpagetitleverification() {
 		String name = dashboardpage.pagetitleverification();
 		System.out.println(name);
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups= {"dashboard1"})
 	public void Testlogoverification() {
 		dashboardpage.titleimagetest();
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3,groups= {"dashboard1"})
 	public void Testmenuverificationtest() {
 		dashboardpage.menu_windowverification();
 	}
 
-	@AfterClass
+	@AfterClass(groups= {"dashboard1"})
 	public void teardown() {
 		System.out.println("dashboard after test");
 		driver.close();

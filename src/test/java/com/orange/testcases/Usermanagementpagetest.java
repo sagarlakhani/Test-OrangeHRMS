@@ -19,24 +19,24 @@ public class Usermanagementpagetest extends Testbase {
 		super();
 	}
 
-	@BeforeClass
+	@BeforeClass(groups= {"usermanagement1"})
 	public void setup() {
 		initialization();
 		login = new login();
 		um = login.loginbutton(prop.getProperty("username"), prop.getProperty("pass"));
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1,groups= {"usermanagement1"})
 	public void validatenavigatetousermanagement() {
 		um.Verifyusermanagementpage();
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2,groups= {"usermanagement1"})
 	public void validateadduserfunctionality() {
 		um.verifyadduser();
 	}
 
-	@AfterClass
+	@AfterClass(groups= {"usermanagement1"})
 	public void teardown() {
 		System.out.println("usermanagement after test");
 		driver.close();

@@ -1,154 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="41" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+  <suite name="Suite" duration-ms="48236" started-at="2020-03-31T13:02:13Z" finished-at="2020-03-31T13:03:02Z">
     <groups>
+      <group name="usermanagement1">
+        <method signature="Usermanagementpagetest.validateadduserfunctionality()[pri:2, instance:com.orange.testcases.Usermanagementpagetest@3a883ce7]" name="validateadduserfunctionality" class="com.orange.testcases.Usermanagementpagetest"/>
+        <method signature="Usermanagementpagetest.validatenavigatetousermanagement()[pri:1, instance:com.orange.testcases.Usermanagementpagetest@3a883ce7]" name="validatenavigatetousermanagement" class="com.orange.testcases.Usermanagementpagetest"/>
+      </group> <!-- usermanagement1 -->
+      <group name="login1">
+        <method signature="Logintest.loginfun()[pri:2, instance:com.orange.testcases.Logintest@53b32d7]" name="loginfun" class="com.orange.testcases.Logintest"/>
+        <method signature="Logintest.loginpagetitletest()[pri:1, instance:com.orange.testcases.Logintest@53b32d7]" name="loginpagetitletest" class="com.orange.testcases.Logintest"/>
+      </group> <!-- login1 -->
+      <group name="dashboard1">
+        <method signature="dashboardpagetest.Testlogoverification()[pri:1, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="Testlogoverification" class="com.orange.testcases.dashboardpagetest"/>
+        <method signature="dashboardpagetest.Testmenuverificationtest()[pri:3, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="Testmenuverificationtest" class="com.orange.testcases.dashboardpagetest"/>
+        <method signature="dashboardpagetest.Testpagetitleverification()[pri:2, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="Testpagetitleverification" class="com.orange.testcases.dashboardpagetest"/>
+      </group> <!-- dashboard1 -->
     </groups>
-    <test name="Test1" duration-ms="41" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-      <class name="com.orange.testcases.practicetestng">
-        <test-method status="PASS" signature="beforesuittest()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="beforesuittest" is-config="true" duration-ms="5" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+    <test name="Test" duration-ms="23286" started-at="2020-03-31T13:02:13Z" finished-at="2020-03-31T13:02:37Z">
+      <class name="com.orange.testcases.Logintest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.orange.testcases.Logintest@53b32d7]" name="setup" is-config="true" duration-ms="15990" started-at="2020-03-31T13:02:13Z" finished-at="2020-03-31T13:02:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforesuittest -->
-        <test-method status="PASS" signature="beforesuittest1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="beforesuittest1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginpagetitletest()[pri:1, instance:com.orange.testcases.Logintest@53b32d7]" name="loginpagetitletest" duration-ms="16" started-at="2020-03-31T13:02:29Z" finished-at="2020-03-31T13:02:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforesuittest1 -->
-        <test-method status="PASS" signature="beforetestmethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="beforetestmethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+        </test-method> <!-- loginpagetitletest -->
+        <test-method status="PASS" signature="loginfun()[pri:2, instance:com.orange.testcases.Logintest@53b32d7]" name="loginfun" duration-ms="6469" started-at="2020-03-31T13:02:29Z" finished-at="2020-03-31T13:02:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetestmethod1 -->
-        <test-method status="PASS" signature="beforetestmethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="beforetestmethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+        </test-method> <!-- loginfun -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orange.testcases.Logintest@53b32d7]" name="teardown" is-config="true" duration-ms="788" started-at="2020-03-31T13:02:36Z" finished-at="2020-03-31T13:02:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforetestmethod -->
-        <test-method status="PASS" signature="beforeclassmethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="beforeclassmethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+        </test-method> <!-- teardown -->
+      </class> <!-- com.orange.testcases.Logintest -->
+    </test> <!-- Test -->
+    <test name="Test1" duration-ms="10775" started-at="2020-03-31T13:02:37Z" finished-at="2020-03-31T13:02:47Z">
+      <class name="com.orange.testcases.dashboardpagetest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="setup" is-config="true" duration-ms="9843" started-at="2020-03-31T13:02:37Z" finished-at="2020-03-31T13:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeclassmethod -->
-        <test-method status="PASS" signature="test2method(java.lang.String, java.lang.String)[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="test2method" duration-ms="5" started-at="2020-03-29T17:41:30Z" data-provider="datatest" finished-at="2020-03-29T17:41:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[first name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[first password]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Testlogoverification()[pri:1, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="Testlogoverification" duration-ms="39" started-at="2020-03-31T13:02:47Z" finished-at="2020-03-31T13:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2method -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="beforemethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+        </test-method> <!-- Testlogoverification -->
+        <test-method status="PASS" signature="Testpagetitleverification()[pri:2, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="Testpagetitleverification" duration-ms="7" started-at="2020-03-31T13:02:47Z" finished-at="2020-03-31T13:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="test2method(java.lang.String, java.lang.String)[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="test2method" duration-ms="0" started-at="2020-03-29T17:41:30Z" data-provider="datatest" finished-at="2020-03-29T17:41:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[second name]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[second password]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- Testpagetitleverification -->
+        <test-method status="PASS" signature="Testmenuverificationtest()[pri:3, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="Testmenuverificationtest" duration-ms="121" started-at="2020-03-31T13:02:47Z" finished-at="2020-03-31T13:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2method -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="aftermethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
+        </test-method> <!-- Testmenuverificationtest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orange.testcases.dashboardpagetest@1dfe2924]" name="teardown" is-config="true" duration-ms="757" started-at="2020-03-31T13:02:47Z" finished-at="2020-03-31T13:02:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="beforemethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="beforemethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="beforemethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod -->
-        <test-method status="PASS" signature="testmethod(java.lang.String)[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="testmethod" duration-ms="5" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sagar]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="aftermethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="afterclassmethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="afterclassmethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterclassmethod -->
-        <test-method status="PASS" signature="aftermethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="aftermethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod -->
-        <test-method status="PASS" signature="aftertestmethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="aftertestmethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftertestmethod1 -->
-        <test-method status="PASS" signature="aftertestmethod()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="aftertestmethod" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftertestmethod -->
-        <test-method status="PASS" signature="aftersuittest()[pri:0, instance:com.orange.testcases.practicetestng@57baeedf]" name="aftersuittest" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftersuittest -->
-        <test-method status="PASS" signature="aftersuittest1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="aftersuittest1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftersuittest1 -->
-      </class> <!-- com.orange.testcases.practicetestng -->
-      <class name="com.orange.testcases.practicetestng2">
-        <test-method status="PASS" signature="beforemethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="beforemethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod1 -->
-        <test-method status="PASS" signature="test2method1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="test2method1" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test2method1 -->
-        <test-method status="PASS" signature="beforeclassmethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="beforeclassmethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeclassmethod1 -->
-        <test-method status="PASS" signature="testmethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="testmethod1" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testmethod1 -->
-        <test-method status="PASS" signature="aftermethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="aftermethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod1 -->
-        <test-method status="PASS" signature="aftermethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="aftermethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aftermethod1 -->
-        <test-method status="PASS" signature="afterclassmethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="afterclassmethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterclassmethod1 -->
-        <test-method status="PASS" signature="beforemethod1()[pri:0, instance:com.orange.testcases.practicetestng2@343f4d3d]" name="beforemethod1" is-config="true" duration-ms="0" started-at="2020-03-29T17:41:30Z" finished-at="2020-03-29T17:41:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforemethod1 -->
-      </class> <!-- com.orange.testcases.practicetestng2 -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.orange.testcases.dashboardpagetest -->
     </test> <!-- Test1 -->
-  </suite> <!-- Suite1 -->
+    <test name="Test2" duration-ms="14136" started-at="2020-03-31T13:02:47Z" finished-at="2020-03-31T13:03:02Z">
+      <class name="com.orange.testcases.Usermanagementpagetest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.orange.testcases.Usermanagementpagetest@3a883ce7]" name="setup" is-config="true" duration-ms="9376" started-at="2020-03-31T13:02:47Z" finished-at="2020-03-31T13:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validatenavigatetousermanagement()[pri:1, instance:com.orange.testcases.Usermanagementpagetest@3a883ce7]" name="validatenavigatetousermanagement" duration-ms="3084" started-at="2020-03-31T13:02:57Z" finished-at="2020-03-31T13:03:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatenavigatetousermanagement -->
+        <test-method status="PASS" signature="validateadduserfunctionality()[pri:2, instance:com.orange.testcases.Usermanagementpagetest@3a883ce7]" name="validateadduserfunctionality" duration-ms="874" started-at="2020-03-31T13:03:00Z" finished-at="2020-03-31T13:03:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateadduserfunctionality -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.orange.testcases.Usermanagementpagetest@3a883ce7]" name="teardown" is-config="true" duration-ms="790" started-at="2020-03-31T13:03:01Z" finished-at="2020-03-31T13:03:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.orange.testcases.Usermanagementpagetest -->
+    </test> <!-- Test2 -->
+  </suite> <!-- Suite -->
 </testng-results>
