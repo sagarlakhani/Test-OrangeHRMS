@@ -32,12 +32,12 @@ public class practicetestng2 {
 		System.out.println("before1 method function");
 	}
 
-	@Test
+	@Test(priority=2)
 	public void testmethod1() {
 		System.out.println("test 11 function");
 	}
 	
-	@Test
+	@Test(priority=1)
 	public void test2method1() {
 		System.out.println("test 12 function");
 	}

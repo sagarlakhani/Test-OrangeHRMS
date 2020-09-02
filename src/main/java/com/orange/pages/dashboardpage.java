@@ -1,7 +1,5 @@
 package com.orange.pages;
 
-import static org.testng.Assert.assertTrue;
-
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -19,7 +17,10 @@ public class dashboardpage extends Testbase {
 	@FindBy(xpath = "//*[@id=\"welcome\"]")
 	WebElement welcomeuser;
 
+	// WebDriver driver;
+
 	public dashboardpage() {
+
 		PageFactory.initElements(driver, this);
 
 	}
@@ -28,12 +29,11 @@ public class dashboardpage extends Testbase {
 		return driver.getTitle();
 	}
 
-	public void titleimagetest() {
-		// Boolean logoimage = titleimage.isDisplayed();
+	public boolean titleimagetest() {
 
-		Boolean logoimage = driver.findElement(By.xpath("//div[@id='branding']//a//img")).isDisplayed();
-		assertTrue(logoimage);
-		System.out.println("logo image available");
+		boolean logoimage = driver.findElement(By.xpath("//div[@id='branding']//a//img")).isDisplayed();
+		return logoimage;
+
 	}
 
 	public void menu_windowverification() {

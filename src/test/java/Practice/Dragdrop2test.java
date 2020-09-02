@@ -43,13 +43,9 @@ public class Dragdrop2test {
 		String actu = driver.findElement(By.xpath("//p[text()='Dropped!']")).getText();
 
 		assertEquals(actu, expect);
-		
-		
+
 		Select sel = new Select(driver.findElement(By.xpath("//div[@id ='draggable']")));
-		
 
 	}
 
-	
-	
 }

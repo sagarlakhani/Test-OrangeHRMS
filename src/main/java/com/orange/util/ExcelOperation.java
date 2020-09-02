@@ -1,9 +1,9 @@
-package Practice;
+package com.orange.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Iterator;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
@@ -11,26 +11,22 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class ExcelreadTest {
+import com.orange.base.Testbase;
 
-	@SuppressWarnings("deprecation")
-	public static void main(String[] args) throws IOException {
+public class ExcelOperation extends Testbase{
 
-		FileInputStream fis = new FileInputStream(new File(
-				"D:\\Learn automation\\OrangeHRMS\\Test-OrangeHRMS\\src\\main\\java\\com\\orange\\testdata\\user.xlsx"));
-		XSSFWorkbook workbook = new XSSFWorkbook(fis);
+	public void ReadExcel() throws IOException {
+
+		FileInputStream filepath = new FileInputStream(new File(prop.getProperty("Filelocation")));
+		XSSFWorkbook workbook = new XSSFWorkbook(filepath);
 		XSSFSheet sheet = workbook.getSheet("demo");
-		Iterator<Row> itr = sheet.iterator();
 
 		FormulaEvaluator evaluator = workbook.getCreationHelper().createFormulaEvaluator();
 
-		while (itr.hasNext()) {
-			Row row = itr.next();
-
-			Iterator<Cell> cellIterator = row.iterator();
-
-			while (cellIterator.hasNext()) {
-				Cell cell = cellIterator.next();
+		for (Row row : sheet) // iteration over row using for each loop
+		{
+			for (Cell cell : row) // iteration over cell using for each loop
+			{
 				switch (evaluator.evaluateInCell(cell).getCellType()) {
 				case Cell.CELL_TYPE_NUMERIC: // field that represents numeric cell type
 					// getting the value of the cell as a number
@@ -42,10 +38,7 @@ public class ExcelreadTest {
 					break;
 				}
 			}
-
 			System.out.println();
-
 		}
-
 	}
 }

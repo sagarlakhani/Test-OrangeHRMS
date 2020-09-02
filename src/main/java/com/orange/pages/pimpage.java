@@ -2,6 +2,7 @@ package com.orange.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.orange.base.Testbase;
 
@@ -33,6 +34,12 @@ public class pimpage extends Testbase {
 	
 	@FindBy(id = "btnSave")
 	WebElement savebutton;
+	
+	
+	public pimpage()
+	{
+		PageFactory.initElements(driver, this);
+	}
 	
 	
 	public void addemp( String fname, String mname, String lname,String uname, String pass, String repass, String dstatus, String check) {

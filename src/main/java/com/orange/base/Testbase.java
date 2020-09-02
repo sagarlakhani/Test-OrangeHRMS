@@ -27,6 +27,7 @@ public class Testbase {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public static void initialization() {
@@ -46,5 +47,10 @@ public class Testbase {
 		driver.get(prop.getProperty("URL"));
 
 	}
+	
+	public static void superadmin()
+	{
+	}
+	
 
 }
